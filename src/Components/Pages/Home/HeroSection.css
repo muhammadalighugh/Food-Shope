@@ -1,0 +1,47 @@
+.hero-section {
+    position: relative; /* Position relative to allow absolute positioning of overlay */
+    height: 90vh; /* Set height to 90% of the viewport */
+    background-image: url('https://media.istockphoto.com/id/603267744/photo/tapas-food.jpg?s=612x612&w=0&k=20&c=kHdCs_6B9YizzPkuynSpgJnTf8m37xsAQ6czvu0cXBU='); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color */
+}
+
+.overlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 0; /* Cover from the top */
+    left: 0; /* Cover from the left */
+    right: 0; /* Cover to the right */
+    bottom: 0; /* Cover to the bottom */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    z-index: 0; /* Set lower z-index than hero content */
+}
+
+.hero-content {
+    position: relative; /* Position relative to ensure it appears above the overlay */
+    z-index: 1; /* Ensure content is above the background and overlay */
+    
+    /* Flexbox styles for centering */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%; /* Full height to center vertically */
+    text-align: center; /* Center the text */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.hero-section p {
+    font-size: 1.25rem; /* Adjust font size for the paragraph */
+    margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+.btn {
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+}
